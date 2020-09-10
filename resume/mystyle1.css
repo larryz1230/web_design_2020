@@ -1,12 +1,13 @@
 body {
-  background-color: #E6E6FA;
+  background-color: #dddded;
+  margin: 10px;
 }
 
 #title {
 	text-align: center;
 }
 
-#title:hover, h3:hover {
+#title:hover {
   /*background-color: yellow;*/
   color: grey;
 }
@@ -22,4 +23,23 @@ html{
 
 h3{
 	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background: pink	;
+	border-radius: 100%;
+	width: 100px;
+}
+
+.bottom{
+	display: inline-flex;
+}
+
+#backTop{
+	position: absolute;
+  	right: 50px;
 }

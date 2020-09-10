@@ -6,6 +6,11 @@ body {
 	text-align: center;
 }
 
+#title:hover, h3:hover {
+  /*background-color: yellow;*/
+  color: grey;
+}
+
 ul {
   list-style-type: circle;
 }

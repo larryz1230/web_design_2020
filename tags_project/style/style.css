@@ -1,0 +1,30 @@
+body{
+	background : #42455a;
+}
+
+.menu ul{
+	display : inline-flex;
+	margin : 50px;
+}
+
+.menu ul li{
+	list-style: none;
+	margin: 0 20px;
+	color: #b2b1b1;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a{
+	color: #b2b1b1;
+	text-decoration: none;
+}
+
+#active{
+	color: white;
+}
+
+.title{
+	text-align: center;
+	color : white;
+}

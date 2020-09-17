@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+	<div class="banner">
 	<div class = "menu">
 			<ul>
 			<!-- 	<li class = "logo"><img src = "icon.webp"></li> -->
@@ -12,7 +13,21 @@
 				<li id = "active"> Maps </a> </li>
 				<li><a href = "table.html"> Table </a> </li>
 			</ul>
-		</div>
-	<h1 class="title">Maps</h1>
+	</div>
+		<h1 class="title">Maps</h1>
+	</div>	
+
+	<img class= "wmap" src="../images/map.svgz" alt="World Map" usemap="#workmap" >
+		<div class = "toast" id ="toast"><p id="text"></p></div>
+
+	<map name="workmap">
+
+	   <area alt="SA" title="SA" coords="205,260,195,279,186,295,191,317,200,336,211,363,205,431,209,466,222,437,231,409,243,380,260,359,276,345,282,328,292,313,287,300,266,291,260,270,255,270,251,266,245,263,231,258" shape="poly" onclick="onMapClick('SA')">
+
+	  <area  alt="NA" title="NA" coords="0,81,73,81,119,63,225,31,374,37,314,78,278,100,225,142,199,196,171,225,174,250,170,270,128,213,103,157,84,119,21,123" shape="poly" onclick="onMapClick('NA')">
+	</map>
+
+
+	<script src = "../script/script.js"></script>
 </body>
 </html>

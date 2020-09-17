@@ -4,16 +4,17 @@ body{
 
 .menu ul{
 	display : inline-flex;
-	margin : 50px;
+	margin : 40px;
 }
 
 .menu ul li{
 	list-style: none;
-	margin: 0 20px;
+	margin: 0 30px;
 	color: #b2b1b1;
 	cursor: pointer;
 	text-decoration: none;
 }
+
 
 a{
 	color: #b2b1b1;
@@ -27,4 +28,43 @@ a{
 .title{
 	text-align: center;
 	color : white;
+}
+
+.name{
+	text-align: right;
+	color : white;
+	margin-right: 20px;
+}
+
+.banner{
+	background-color: #323442;
+	height: 240px;
+	margin-bottom: 20px;
+}
+
+
+
+
+/*Map*/
+
+.wmap{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.toast{
+	border-color: white;
+	width: 350px;
+	height: 150px;
+	background-color: white;
+	position: absolute;
+	top: 350px;
+	left: 70px;
+	visibility: hidden;
+}
+
+.poly{
+	background-color: black;
 }

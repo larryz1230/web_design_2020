@@ -18,16 +18,37 @@
 	</div>	
 
 	<img class= "wmap" src="../images/map.svgz" alt="World Map" usemap="#workmap" >
-		<div class = "toast" id ="toast"><p id="text"></p></div>
+		<div class = "toast" id ="toast"><p id="text">Select a continent</p></div>
+		<button class= "resetmap" onclick="resetselection()">Reset Selection</button>
 
 	<map name="workmap">
 
-	   <area alt="SA" title="SA" coords="205,260,195,279,186,295,191,317,200,336,211,363,205,431,209,466,222,437,231,409,243,380,260,359,276,345,282,328,292,313,287,300,266,291,260,270,255,270,251,266,245,263,231,258" shape="poly" onclick="onMapClick('SA')">
+		<area alt="SA" title="SA" coords="205,260,195,279,186,295,191,317,200,336,211,363,205,431,209,466,222,437,231,409,243,380,260,359,276,345,282,328,292,313,287,300,266,291,260,270,255,270,251,266,245,263,231,258" shape="poly" onclick="onMapClick('SA')">
 
-	  <area  alt="NA" title="NA" coords="0,81,73,81,119,63,225,31,374,37,314,78,278,100,225,142,199,196,171,225,174,250,170,270,128,213,103,157,84,119,21,123" shape="poly" onclick="onMapClick('NA')">
+		<area  alt="NA" title="NA" coords="0,81,73,81,119,63,225,31,374,37,314,78,278,100,225,142,199,196,171,225,174,250,170,270,128,213,103,157,84,119,21,123" shape="poly" onclick="onMapClick('NA')">
+
+		<area  alt="AF" title="AF" coords="362,181,338,190,320,204,320,223,317,241,331,264,343,281,374,300,391,329,390,362,400,392,408,416,424,374,427,357,434,337,443,326,445,310,449,286,471,259,449,253,441,232,432,220,419,217,416,202,395,192,382,181" shape="poly" onclick="onMapClick('AF')">
+
+		<area alt="EU" title="EU" coords="318,195,304,172,326,172,318,153,322,121,362,85,401,79,501,57,478,96,472,121,473,150,439,157,422,163,398,177,380,174,367,174,357,172,347,174" shape="poly" onclick="onMapClick('EU')">
+
+		<area  alt="AS" title="AS"  coords="474,154,429,164,409,185,456,247,491,239,512,271,530,315,559,321,601,313,691,298,671,179,679,138,719,112,754,98,790,83,636,58,548,82,498,60,473,110,473,136,473,141,474,152,466,161" shape="poly" onclick="onMapClick('AS')">
+
+	 	<area  alt="AU" title="AU"  coords="599,322,577,377,591,405,645,392,680,404,689,370,671,313,640,325" shape="poly" onclick="onMapClick('AU')">
 	</map>
+
+
+	<br>
+
+	<p>loremipsum</p>
+
+
 
 
 	<script src = "../script/script.js"></script>
 </body>
 </html>
+
+<!-- Bibliography
+	https://www.image-map.net/
+
+ -->

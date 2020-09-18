@@ -56,15 +56,20 @@ a{
 
 .toast{
 	border-color: white;
-	width: 350px;
-	height: 150px;
+	width: 250px;
+	height: 60px;
 	background-color: white;
 	position: absolute;
 	top: 350px;
 	left: 70px;
-	visibility: hidden;
 }
 
 .poly{
 	background-color: black;
+}
+
+.resetmap{
+	position: absolute;
+	top: 430px;
+	left: 70px;
 }

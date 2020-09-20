@@ -1,7 +1,29 @@
+html{
+	margin: none;
+	padding: none;
+}
 body{
 	background : #42455a;
 }
 
+h1{
+	color: white;
+	font-size: 40px;	
+}
+
+h2{
+	margin-left: 80px;
+	font-size: 33px;
+	color: white;	
+}
+
+#contentp{
+	font-size: 20px;
+	color: #cbccd6;
+	text-align: left;
+}
+
+/*menu*/
 .menu ul{
 	display : inline-flex;
 	margin : 40px;
@@ -30,6 +52,10 @@ a{
 	color : white;
 }
 
+.title a{
+	color: white;
+}
+
 .name{
 	text-align: right;
 	color : white;
@@ -39,7 +65,18 @@ a{
 .banner{
 	background-color: #323442;
 	height: 240px;
+	width: *;
 	margin-bottom: 20px;
+	margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*Home*/
+.maincontenthome{
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	align-content: center;
 }
 
 
@@ -56,9 +93,11 @@ a{
 
 .toast{
 	border-color: white;
-	width: 250px;
-	height: 60px;
-	background-color: white;
+	width: 260px;
+	padding: 10px;
+	color: white;
+	height: 55px;
+	background-color: #656985;
 	position: absolute;
 	top: 350px;
 	left: 70px;
@@ -71,5 +110,63 @@ a{
 .resetmap{
 	position: absolute;
 	top: 430px;
-	left: 70px;
+	left: 150px;
+	color: black;
+}
+
+
+
+/* Main Content */
+
+.maincontent{
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	align-content: center;
+}
+
+#exmp{
+	width:  = 700px;
+}
+
+
+/*tABLE*/
+
+table{
+	width: 90%;
+	margin: auto;
+}
+
+
+table, th, td {
+  border: 1px solid #cbccd6;
+  border-collapse: collapse;
+  color: white;
+}
+
+th{
+	height: 50px;
+	background-color: #5d6178;
+}
+
+td{
+	height: 100px;
+	text-align: center;
+	width: 12.85%;
+}
+
+.date{
+	text-align: right;
+	margin-right: 10px;
+	margin-top: -30px;
+}
+.opaq{
+	opacity: 50%;
+}
+
+.maincontenttable{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	align-content: center;
 }

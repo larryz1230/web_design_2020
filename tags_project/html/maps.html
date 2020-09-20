@@ -5,27 +5,33 @@
 	<link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+
 	<div class="banner">
+	<!-- Navigation Bar -->
 	<div class = "menu">
 			<ul>
-			<!-- 	<li class = "logo"><img src = "icon.webp"></li> -->
 				<li><a href="zhi_ElemPres_index.html">Home</a></li>
 				<li id = "active"> Maps </a> </li>
 				<li><a href = "table.html"> Table </a> </li>
 			</ul>
+
+	<!-- title -->
 	</div>
-		<h1 class="title">Maps</h1>
+		<h1 class="title"><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target = "blank">Maps</a></h1>
 	</div>	
 
-	<img class= "wmap" src="../images/map.svgz" alt="World Map" usemap="#workmap" >
+	<!-- Image that links the image map -->
+	<img class= "wmap" src="../images/map.svgz" alt="World Map" usemap="#worldmap" >
 		<div class = "toast" id ="toast"><p id="text">Select a continent</p></div>
 		<button class= "resetmap" onclick="resetselection()">Reset Selection</button>
 
-	<map name="workmap">
 
-		<area alt="SA" title="SA" coords="205,260,195,279,186,295,191,317,200,336,211,363,205,431,209,466,222,437,231,409,243,380,260,359,276,345,282,328,292,313,287,300,266,291,260,270,255,270,251,266,245,263,231,258" shape="poly" onclick="onMapClick('SA')">
+	<!-- Image Map that I created -->
+	<map name="worldmap">
 
-		<area  alt="NA" title="NA" coords="0,81,73,81,119,63,225,31,374,37,314,78,278,100,225,142,199,196,171,225,174,250,170,270,128,213,103,157,84,119,21,123" shape="poly" onclick="onMapClick('NA')">
+		<area alt="SA" title="SA"  coords="205,260,195,279,186,295,191,317,200,336,211,363,205,431,209,466,222,437,231,409,243,380,260,359,276,345,282,328,292,313,287,300,266,291,260,270,255,270,251,266,245,263,231,258" shape="poly" onclick="onMapClick('SA')">
+
+		<area  alt="NA" title="NA"  coords="0,81,73,81,119,63,225,31,374,37,314,78,278,100,225,142,199,196,171,225,174,250,170,270,128,213,103,157,84,119,21,123" shape="poly" onclick="onMapClick('NA')">
 
 		<area  alt="AF" title="AF" coords="362,181,338,190,320,204,320,223,317,241,331,264,343,281,374,300,391,329,390,362,400,392,408,416,424,374,427,357,434,337,443,326,445,310,449,286,471,259,449,253,441,232,432,220,419,217,416,202,395,192,382,181" shape="poly" onclick="onMapClick('AF')">
 
@@ -36,19 +42,42 @@
 	 	<area  alt="AU" title="AU"  coords="599,322,577,377,591,405,645,392,680,404,689,370,671,313,640,325" shape="poly" onclick="onMapClick('AU')">
 	</map>
 
+	<br>
+	<hr>
+
+	<!-- Main Content / Information for this page -->
+	<div class="maincontent">
+
+		<h1>Explanation</h1>
+	<p id = "contentp">This is an example of an image map. An image map is basically a image that is separated into multiple sections. Below is a visual representation of one of these sections.</p>
+
+
+		<a href="../images/areaExp.png">
+			<img  src="../images/areaExp.png" alt="areaExp" width="400" height="300">
+		</a>
+		
+
+		<p id = "contentp">These sections are called areas, and they can be specified with the area tag < area >. The < area > tag has many attributes that can be specified including alt, coords, download, href, hreflang, media, rel, shape, target, and type. This outline of Africa does not look perfect, but this is because the outline is made up of connected coordinates. We can specify these coordinates by making an area tag, and adding a coords attribute. Then we list the coordinates, and the shape we want it to be. Some example choices of shapes are rectangles, circles, and poly which is just a bunch of connected dots.</p>
+
+		<br>
+
+		<p id = "contentp">An example area tag could look something like this: < area alt="" title="" coords= "1,2,5,32,3,12,2,43" shape="poly"< / area>. Inside of a given map element, there could be multiple areas that can be specified. The image below shows my code for the image map on this webpage. Of course I did not write all these coordinates, but instead used an image map coordinate marker website to retrieve the coordinates for each of the areas. This website is linked in the bibliography. To make the areas of the map clickable, I used some basic javascript to write text in the html document. </p>
+
+
+		<!-- my code example -->
+		<a href="../images/Capture.png">
+			<img id= "exmp" src="../images/Capture.png" alt="coordinates" width="500" height="300">
+		</a>	
+	
+	</div>
 
 	<br>
 
-	<p>loremipsum</p>
 
 
 
-
+	<!-- js link -->
 	<script src = "../script/script.js"></script>
 </body>
 </html>
 
-<!-- Bibliography
-	https://www.image-map.net/
-
- -->

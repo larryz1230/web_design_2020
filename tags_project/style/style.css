@@ -142,6 +142,7 @@ table, th, td {
   border: 1px solid #cbccd6;
   border-collapse: collapse;
   color: white;
+  padding: 5px;
 }
 
 th{

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+	<link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+	<div class="banner">
+		<!-- nav bar -->
+	<div class = "menu">
+			<ul>
+			<!-- 	<li class = "logo"><img src = "icon.webp"></li> -->
+				<li><a href="zhi_ElemPres_index.html">Home</a></li>
+				<li><a href = "maps.html"> Maps </a> </li>
+				<li id = "active">Table </a> </li>
+			</ul>
+	</div>
+		<h1 class="title"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="blank">Tables</a></h1>
+	</div>
+
+	<h2> September 2020</h2>
+
+	<!-- my calendar table -->
+	<table>
+	  <tr>
+	  	<th>Sunday</th>
+	    <th>Monday</th>
+	    <th>Tuesday</th> 
+	    <th>Wednesday</th>
+	    <th>Thursday</th>
+	    <th>Friday</th> 
+	    <th>Saturday</th>
+	  </tr>
+	  <tr>
+	    <td><div class="opaq"><div class= "date" >30</div><br><br></div></td>
+	    <td><div class="opaq"><div class= "date" >31</div><br><br></div></td>
+	    <td><div class= "date" >1</div><br><br></td>
+	    <td><div class= "date" >2</div><br><br></td>
+	    <td><div class= "date" >3</div><br><br></td>
+	    <td><div class= "date" >4</div><br><br></td>
+	    <td><div class= "date" >5</div><br><br></td>
+	  </tr>
+	  <tr>
+	    
+	    <td><div class= "date" >6</div><br><br></td>
+	    <td><div class= "date" >7</div><br>Labor Day</td>
+	    <td><div class= "date" >8</div><br><br></td>
+	    <td><div class= "date" >9</div><br><br></td>
+	    <td><div class= "date" >10</div><br><br></td>
+	    <td><div class= "date" >11</div><br>9/11 Remembrance</td>
+	    <td><div class= "date" >12</div><br>National Video Games Day</td>
+	  </tr>
+	  <tr>
+	    
+	    <td><div class= "date" >13</div><br><br></td>
+	    <td><div class= "date" >14</div><br><br></td>
+	    <td><div class= "date" >15</div><br><br></td>
+	    <td><div class= "date" >16</div><br><br></td>
+	    <td><div class= "date" >17</div><br><br></td>
+	    <td><div class= "date" >18</div><br><br></td>
+	    <td><div class= "date" >19</div><br><br></td>
+	  </tr>
+	  <tr>
+	    
+	    <td><div class= "date" >20</div><br><br></td>
+	    <td><div class= "date" >21</div><br><br></td>
+	    <td><div class= "date" >22</div><br><br></td>
+	    <td><div class= "date" >23</div><br><br></td>
+	    <td><div class= "date" >24</div><br>Element Presentation Due!</td>
+	    <td><div class= "date" >25</div><br><br></td>
+	    <td><div class= "date" >26</div><br><br></td>
+	  </tr>
+	  <tr>
+	    <td><div class= "date" >27</div><br><br></td>
+	    <td><div class= "date" >28</div><br><br></td>
+	    <td><div class= "date" >29</div><br><br></td>
+	    <td><div class= "date" >30</div><br><br></td>
+	    <td><div class="opaq"><div class= "date" >1</div><br><br></div></td>
+	    <td><div class="opaq"><div class= "date" >2</div><br><br></div></td>
+	    <td><div class="opaq"><div class= "date" >3</div><br><br></div></td>
+	 </tr>
+	</table>
+
+	<br><br><br>
+	<hr>
+
+
+	<!-- Main Content / Information for this page -->
+	<div class= "maincontenttable">
+
+	<br><br>
+
+	<p id = "contentp">This page of the website is all about tables, and how they work. Tables have a variety of functions, and as you can see, I have decided to make a calendar in order to showcase some of the capabilites of the table tag.
+		The main component of the table tag of course is < table >, but there are also other tags that it uses, including < tr >, < td >, and < th >. < th > is the element used to define the heading of a table. < tr > is used to define a row in the table, and < td > is used to define a data value for the table. In the case of this calendar, the table heading, or < th > would be the days of the week. The < tr > would be each row in the calendar , and the < td > would be the individual squares in the table. </p>
+
+		<br>
+
+		<a href="../images/calen.png">
+			<img id= "exmp" src="../images/calen.png" alt="calendarcode" width="700" height="500">
+		</a>	
+
+		<p id = "contentp"> To make a table, we first specify the < table > tag. Then we list all of the table headings, or columns. After that, we use < tr > to specify each row in the table, and in the < tr > tag, we can include  < td > tags to represent data. The picture above is a portion of my code for this calendar. After styling some of the elements with css, the calendar was finished. </p>
+
+		<br><hr>
+
+		<h1> Attributes</h1>
+
+	<table>
+	  <tr>
+	  	<th></th>
+	    <th>Global Attributes</th>
+	    <th>Event Attributes</th>
+	    <th>Additional Attributes</th>
+	    <th>Tags</th>
+	  </tr>
+	  <tr>
+	    <td>Table</td>
+	    <td>Yes</td>
+	    <td>Yes</td>
+	    <td>None</td>
+	    <td>< td >, < th >, < tr ></td>
+	  </tr>
+
+	</table>
+
+	<br><br>
+
+	<h1> Properties</h1>
+
+	<table>
+	  <tr>
+	  	<th>Property</th>
+	    <th>What it does</th>
+	  </tr>
+	  <tr>
+	    <td>Border</td>
+	    <td>The border property lets your add a border to your table. It also lets you specify what kind of border you want to add and the color of the border.
+	  </tr>
+	  <tr>
+	    <td>Padding</td>
+	    <td>The padding property allows you to make a space between the edge of the table and the content inside. This way the data inside the table will not be squished against the border of the table.
+	  </tr>
+
+	</table>
+	
+
+	</div>
+</body>
+</html>

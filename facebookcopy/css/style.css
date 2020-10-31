@@ -1,0 +1,213 @@
+body{
+	background-color: #F0F2F5;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+	font-size: 15px;
+	font-style: normal;
+    
+}
+
+
+/*NAV BAR*/
+
+.navbar{
+	width: 100%;
+	height: 56px;
+	background-color: white;
+	left: 0px;
+	opacity: 100%;
+	overflow: hidden;
+	z-index: 99999;
+	top: 0px;
+	position: fixed;
+	border-bottom: 2px solid #d9dbde;
+}
+
+#fbicon{
+	position: fixed;
+	left: 15px;
+	top: 7px;
+}
+
+.searchbox{
+	position: fixed;
+	left: 65px;
+	top: 7px;
+	height: 40px;
+	width: 240px;
+	background-color: #F0F2F5;
+	border-radius: 20px;
+	border-style: none;
+}
+
+#searchfb{
+	height: 30px;
+	margin-top: 4px;
+	left: 20px;
+	position: absolute;
+	border-style: none;
+	background-color: transparent;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+	font-weight: 400;	
+	font-size: 15px;
+	border-style: none;
+	outline: none;
+}
+
+.midiconbuttons{
+	display: inline-block;
+	width: 800px;
+	left: 445px;
+	padding-top: 10px;
+	position: fixed;
+}
+
+.midiconbuttons img{
+	padding-right: 42px;
+	cursor: pointer;
+}
+
+
+.profileicons{
+	float: right;
+	width: 150px;
+/*	border: 1px solid black;*/
+	right: 225px;
+	display: inline-block;
+	top: 4px;
+	position: fixed;
+	font-size: 14.5px;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+	font-weight: 600;
+}
+
+#profilename{
+	text-align: right;
+	font-weight: 600;
+	float: right;
+}
+
+#profilepic{
+	margin-top: 12px;
+	margin-right: 5px;
+}
+
+.righticonbuttons{
+	display: inline-block;
+	right: 0px;
+	top: 0px;
+	position: fixed;
+	margin-right: 15px;
+	padding-top: 5px;
+	align: left;
+}
+
+.righticonbuttons img{
+	cursor: pointer;
+}
+
+
+
+/*LEFT DRAWER*/
+
+.leftdrawer{
+	width: 21.9%;
+	height: 100%;
+	border-right: 1px solid black;
+	left: 0px;
+	top: 57px;
+	position: fixed;
+	overflow: auto;
+}
+
+ul{
+	list-style: none;
+    padding-left: 10px;
+}
+
+ul li{
+	width: 100%
+	left: 0;
+	height: 45px;
+	border: 1px solid #F0F2F5;
+	list-style-type: none;
+	font-weight: 600;
+	display: block;
+}
+
+ul li img{
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+.rightdrawer{
+	width: 21.9%;
+	height: 100%;
+	border-left: 1px solid black;
+	right: 0px;
+	top: 57px;
+	position: fixed;
+	overflow: auto;
+}
+
+.midcontainer{
+	width: 42.7%;
+	height: 100%;
+/*	border: 1px solid black;*/
+	top: 57px;
+	justify-content: center;
+	position: relative;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.stories{
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
+	top: 25px;
+	position: absolute;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.status{
+	width: 100%;
+	height: 125px;
+	border-radius: 10px;
+	border: 1px solid black;
+	top: 275px;
+	position: absolute;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+
+.rooms{
+	width: 100%;
+	height: 100px;
+	border-radius: 10px;
+	border: 1px solid black;
+	top: 430px;
+	position: absolute;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.posts{
+	width: 100%;
+	height: 500px;
+	border-radius: 10px;
+	border: 1px solid black;
+	top: 550px;
+	position: absolute;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+
+

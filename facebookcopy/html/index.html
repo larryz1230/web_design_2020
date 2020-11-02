@@ -4,6 +4,7 @@
 	<title>Facebook</title>
 	<link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png">
 	<link rel="stylesheet" href="../css/style.css">
+	<script src="../script/script.js"></script>
 </head>
 <body>
 	<div class = "navbar">
@@ -31,13 +32,31 @@
 		</div>
 
 		<div class="righticonbuttons">
-			<img src="../images/add.png" width="45px" height="45px">
-			<img src="../images/messageicon.png" width="45px" height="45px">
-			<img src="../images/notif	.png" width="45px" height="45px">
-			<img src="../images/trinagle.png" width="45px" height="45px">
 			
+			
+			<div class="tooltip">
+				<img src="../images/add.png" width="45px" height="45px">
+				<span class="tooltiptext">Create</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/messageicon.png" width="45px" height="45px">
+				<span class="tooltiptext">Messaging</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/notif.png" width="45px" height="45px">
+				<span class="tooltiptext">Notifications</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/trinagle.png" width="45px" height="45px" onclick="showpop()">
+				<span class="tooltiptext">Account</span>
+			</div>			
 		</div>
 
+	</div>
+
+	<div class="popout" id= "popout">
+		<p>Larry Zhi</p>
+		<p>See Your Profile</p>
 	</div>
 
 
@@ -45,28 +64,50 @@
 		<ul>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Larry Zhi</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Pages</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Friends</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Groups</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Marketplace</p>
+			</li>
+			<li>
+				<img src="../images/trinagle.png" width="45px" height="45px">
+				<p onclick="showmore()">See More</p>
+			</li>
+			<div class="showmore" id="showmore">
+				<li>
+				<img src="../images/add.png" width="45px" height="45px">
+				<p>Larry Zhi</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Pages</p>
 			</li>
+			<li>
+				<img src="../images/add.png" width="45px" height="45px">
+				<p>Friends</p>
+			</li>
+			<li>
+				<img src="../images/add.png" width="45px" height="45px">
+				<p>Groups</p>
+			</li>
+			<li>
+				<img src="../images/add.png" width="45px" height="45px">
+				<p>Marketplace</p>
+			</li>
+			</div>
 		</ul>
 
 		<hr>
@@ -74,6 +115,10 @@
 		<p>Your Shortcuts</p>
 
 		<ul>
+			<li>
+				<img src="../images/add.png" width="45px" height="45px">
+				<p>hello there</p>
+			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
 				<p>hello there</p>
@@ -121,11 +166,11 @@
 		<ul>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Happy Birthday Andrew!</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Happy Birthday Andrew!</p>
 			</li>
 		</ul>
 
@@ -136,67 +181,67 @@
 		<ul>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 			<li>
 				<img src="../images/add.png" width="45px" height="45px">
-				<p>hello there</p>
+				<p>Andrew Zheng</p>
 			</li>
 		</ul>	
 	</div>
@@ -205,11 +250,11 @@
 	<div class = "midcontainer">
 
 		<div class = "stories">
-			<img src="../images/homeicon.png" width="105px" height="200px">
-			<img src="../images/homeicon.png" width="105px" height="200px">
-			<img src="../images/homeicon.png" width="105px" height="200px">
-			<img src="../images/homeicon.png" width="105px" height="200px">
-			<img src="../images/homeicon.png" width="105px" height="200px">
+			<img src="https://ipt.imgix.net/201447/x/0/how-and-why-you-should-shoot-vertical-landscape-photos-6.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=1300" width="105px" height="200px">
+			<img src="https://static.photocdn.pt/images/articles/2018/05/07/articles/2017_8/landscape_photography_tips.jpg" width="105px" height="200px">	
+			<img src="https://images.unsplash.com/photo-1444041103143-1d0586b9c0b8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" width="105px" height="200px">
+			<img src="https://danbaileyphoto.com/blog/wp-content/uploads/2018/03/AK-NATWT-ANC-05061-e1520967426417.jpg" width="105px" height="200px">
+			<img src="https://ipt.imgix.net/201446/x/0/how-and-why-you-should-shoot-vertical-landscape-photos-7.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=1300" width="105px" height="200px">
 		</div>
 
 

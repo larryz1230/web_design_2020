@@ -106,8 +106,48 @@ body{
 
 .righticonbuttons img{
 	cursor: pointer;
+/*	border: 1px solid black;*/
 }
 
+
+.popout{
+	position: fixed;
+	right: 30px;
+	background-color: white;
+	width: 350px;
+	border-radius: 10px;
+	height: 450px;
+	top: 55px;
+	z-index: 9100;
+	visibility: hidden;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+/*  border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 75px;
+  background-color: #3C3C3C;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: -30%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 
 /*LEFT DRAWER*/
@@ -123,6 +163,10 @@ body{
 	overflow-y: auto;
 }
 
+.showmore{
+	display: none
+}
+
 ul{
 	list-style: none;
     padding-left: 10px;
@@ -134,7 +178,8 @@ ul li{
 	height: 45px;
 	border: 1px solid #F0F2F5;
 	list-style-type: none;
-	font-weight: 600;
+	font-size: 14.5px;
+	font-weight: 610;
 	display: block;
 }
 
@@ -178,9 +223,9 @@ ul li img{
 }
 
 .stories img{
-	padding-right: 7px;
+	margin-right: 7px;
 	border-radius: 10px;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 
 .status{

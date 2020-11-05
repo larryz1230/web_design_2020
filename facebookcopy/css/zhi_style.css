@@ -59,14 +59,15 @@ body{
 .midiconbuttons{
 	display: inline-block;
 	width: 800px;
-	left: 445px;
+	left: 500px;
 	padding-top: 10px;
 	position: fixed;
 }
 
 .midiconbuttons img{
-	padding-right: 40px;
+	margin-right: 72px;
 	cursor: pointer;
+/*	border: 1px solid black;*/
 }
 
 
@@ -116,10 +117,53 @@ body{
 	background-color: white;
 	width: 350px;
 	border-radius: 10px;
-	height: 450px;
+	height: 100px;
 	top: 55px;
 	z-index: 9100;
 	visibility: hidden;
+	display: block;
+}
+/*
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;	
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+ Handle 
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}*/
+
+.popouticons{
+	float: left;
+	width: 200px;
+	padding-left: 20px;
+/*	border: 1px solid black;*/
+	display: inline-block;
+	font-size: 14px;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+	font-weight: 400;
+}
+
+.description{
+	margin-top: 5px;
+	height: 200px;
+	vertical-align: middle;
+	float: left;
+}
+
+.description p {
+	margin-bottom: 0px;
 }
 
 .tooltip {
@@ -155,7 +199,6 @@ body{
 .leftdrawer{
 	width: 21.9%;
 	height: 100%;
-	border-right: 1px solid black;
 	left: 0px;
 	top: 57px;
 	position: fixed;
@@ -166,6 +209,7 @@ body{
 .showmore{
 	display: none
 }
+
 
 ul{
 	list-style: none;
@@ -183,16 +227,21 @@ ul li{
 	display: block;
 }
 
+ul li:hover{
+	cursor: pointer;
+}
+
 ul li img{
 	float: left;
 	margin-right: 10px;
+	padding-top: 5px;
 }
 
 /*RIGHT DRAWER*/
 .rightdrawer{
 	width: 21.9%;
 	height: 100%;
-	border-left: 1px solid black;
+/*	*/
 	right: 0px;
 	top: 57px;
 	position: fixed;
@@ -220,10 +269,11 @@ ul li img{
 	position: absolute;
 	margin-left: auto;
   	margin-right: auto;
+  	align-items: center;
 }
 
 .stories img{
-	margin-right: 7px;
+	margin-right: 8px;
 	border-radius: 10px;
 /*	border: 1px solid black;*/
 }
@@ -330,7 +380,7 @@ ul li img{
 
 .toppost{
 	height: 100%px;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	margin-top: 0px;
 }
 

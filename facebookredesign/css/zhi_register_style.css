@@ -1,0 +1,220 @@
+html{
+	margin: none;
+	padding: none;
+	background-image: url("https://wallpaperaccess.com/full/1973704.png");
+  background-color: #f4f4f4;
+	 height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+
+#title{
+  position: absolute;
+    top: 160px;
+    left: 220px;
+    width: 510px;
+    background-color: none;
+    pointer-events: none;
+
+}
+
+
+.lnamein{
+  width: 46%;
+}
+
+.fnamein{
+  width: 46%;
+}
+
+.monthin{
+  width: 35%;
+}
+
+.yearin{
+  width: 35%;
+}
+
+#titlefont{
+  margin-bottom: 10px;
+  color: #2177f4;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+}
+
+#titledesc {
+  margin-top: 0px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+
+  /*border: 1px solid black;*/
+}
+.choice{
+  width: 30%;
+  /*border: 1px solid black;*/
+  display: inline-flex;
+  background-color: white;
+  /*width: 100%;  Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.nameinputs{
+  justify-content: space-between;
+  width: 100%;
+  /*border: 1px solid black;*/
+  display: flex;
+/*  padding-left: 10px;
+  padding-right: 10px;*/
+}
+
+.dateinputs{
+  justify-content: space-between;
+  width: 100%;
+  /*border: 1px solid black;*/
+  display: flex;
+/*  padding-left: 10px;
+  padding-right: 10px;*/
+}
+
+.genderinputs{
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+#formtitle{
+  
+  color: white;
+  font-size: 45px;
+  font-weight: 300; 
+}
+
+.formtitcontain{
+  position: absolute;
+  top: 10px;
+  left: 60%;
+  width: 30%;
+  /*border: 1px solid black;*/
+  padding: 20px;
+  text-align: center;
+}
+input, label {
+    display:block;
+}
+
+input[type=text], input[type=password],input[type=number], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 12px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(139,157,195);
+
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 12px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(59,89,152);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  width: 25%;
+position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid grey;
+}
+
+
+.logincontainer {
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px;
+  width: 25%;
+position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.fpass{
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 12px;
+  /*border: 1px solid black;*/
+  display: flex;
+    justify-content: space-around;
+}
+
+#newacc{
+  height: 50px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  background-color: #25cf34;
+  color: white;
+
+}
+
+
+#newacc:hover {
+  background-color: rgb(48, 191, 61);
+  cursor: pointer;
+}
+
+.newa{
+  margin-top: 16px; /* Add a top margin */
+  margin-bottom: 2px;
+  /*border: 1px solid black;*/
+  display: flex;
+    justify-content: space-around;
+
+}
+
+#lemail, #lpassword, #llogin{
+  height: 55px;
+  border-radius: 6px;
+  margin-top: 14px; /* Add a top margin */
+  margin-bottom: 25px;
+}

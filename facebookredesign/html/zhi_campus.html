@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<title>Campus | Facebook</title>
+	<link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png">
+	<link rel="stylesheet" href="../css/zhi_redesign_style.css"	>
+	<!-- <link rel="stylesheet" href="../css/campus.css"> -->
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+	</style>
+</head>
+<body>
+
+
+<div class = "navbar" id = "nav">
+		
+		<img id = "fbicon" src = "https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png" width="40px" height="40px" onclick="gotohome()">
+		<div class="searchbox">
+			<input type="text" name="searchfb" id= "searchfb" placeholder="Search Facebook">
+		</div>
+			<img id="fbtext" src = "../images/fbtitle.png">
+
+		<div class="profileicons">
+			<p id="profilename"  style="float: right;">Larry</p>
+			<img id="profilepic"style="float: right;" src="../images/profilepicimg.png" width="25px" height="25px">
+		</div>
+
+		<div class="righticonbuttons">
+			
+			
+			<div class="tooltip">
+				<img src="../images/add.png" width="40px" height="40px">
+				<span class="tooltiptext">Create</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/messageicon.png" width="40px" height="40px">
+				<span class="tooltiptext">Messaging</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/notif.png" width="40px" height="40px">
+				<span class="tooltiptext">Notifications</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/trinagle.png" width="40px" height="40px" onclick="showpop()">
+				<span class="tooltiptext">Account</span>
+			</div>			
+		</div>
+
+	</div>
+
+	<div class="whole">
+
+
+
+	<div class="popout" id= "popout">
+		<div class="popouticons">
+			<img id="profilepic"style="float: left;" src="../images/profilepicimg.png" width="55px" height="55px">
+			<div class= "description">
+				<p><b>Larry Zhi</b></p>
+				<a href="https://www.facebook.com/larry.zhi.58/" target="blank">See Your Profile</a>
+				<p id = "logout"><a href="logout.php">Logout</a></p>
+			</div>
+			
+		</div>	
+	</div>
+
+
+	
+	<!-- <script src="../script/zhi_redesign_script.js" defer=""></script> -->
+
+
+
+	<!-- main content -->
+
+	<div class="campuscontainer" id="popup">
+
+		<img src="../images/campuss.png" id="popupinfo" alt="A group of students">
+		<img src="../images/cancel.png" width="40px" style="position: absolute; top: 10px; right: 10px;" onclick="unblur()">
+
+
+	</div>
+
+
+	<div class="enter" id="enter">
+		<h2>Confirm your college email to get started</h2>
+		<hr>
+		<h3 style="color: grey; font-weight: 400">Verifying you belong to this college community gives you access to Campus groups, events, and more.</h3>
+		<h2>Email</h2>
+		<input type="text" name="collegeemail" style="padding-left: 5px;">
+		<p>We'll send you a verification email with a link to join Campus.</p>
+		<input type="submit" name="confirmcemail" value="Confirm" style="border: none; cursor: pointer;">
+		
+	</div>
+
+	<!-- <div class="background" style="width: 100%; height: 100%; background-color: black; display: block;"> -->
+
+	</div>
+</div>
+
+	<script src="../script/zhi_campus.js" defer=""></script>
+</body>
+
+<style>
+	html{
+	margin: none;
+	padding: none;
+	background-image: url("../images/gradtrans.png");
+  background-color: #f4f4f4;
+	 height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  
+}
+
+</style>
+</html>

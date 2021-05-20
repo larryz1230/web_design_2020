@@ -1,0 +1,133 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  /*border: 1px solid black;*/
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roww{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  /*border: 1px solid black;*/
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /*border: 1px solid black;*/
+  height: 150px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.vert{
+  margin-left: 20px;
+  /*border: 1px solid black;*/  
+  width: 75%;
+}
+
+.buttondiv{
+  float: right;
+  height: 100%;
+  width: 10%;
+  /*border: 1px solid black;*/
+  margin-right: 0px;
+/*  right: 0px;
+  position: absolute;*/
+}
+.buttondiv button{
+  /*border-radius: 10px;*/
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 17%;
+  max-width: 17%;
+  /*padding: 0 4px;*/
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 350px;
+  border: 1px solid black;
+  /*border-radius: 10px;*/
+  background-color: white;
+}
+
+.column p {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.tablecontainer{
+  position: absolute;
+  top: 75px;
+  width: 90%;
+  display: block;
+  left: 5%;
+  margin-bottom: 10px;
+}
+
+
+.textcontain h2{
+  margin-top: 5px;
+}
+
+.textcontain p{
+  line-height: 0.2;
+}
+
+
+
+.menu {
+  display: inline-block;
+  width: 100%;
+  /*border: 1px solid black;*/
+  margin-left: 10px;
+   margin-right: 20px;
+}
+
+.dropdown{
+  float: right;
+  display: inline-block;
+  /*border: 1px solid black;*/
+  top: 5px;
+  position: absolute;
+  right: 20px;
+}
+
+
+
+input[type=text], input[type=password],input[type=number], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 12px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.circle{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.circle p{
+  margin-top: 23px;
+}
+
+.iconlist{
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<title>Games | Facebook</title>
+	<link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png">
+	<link rel="stylesheet" href="../css/zhi_redesign_style.css"	>
+	<link rel="stylesheet" href="../css/zhi_grid.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+	</style>
+</head>
+<body>
+
+
+<div class = "navbar" id = "nav">
+		
+		<img id = "fbicon" src = "https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png" width="40px" height="40px" onclick="gotohome()">
+		<div class="searchbox">
+			<input type="text" name="searchfb" id= "searchfb" placeholder="Search Facebook">
+		</div>
+			<img id="fbtext" src = "../images/fbtitle.png">
+
+		<div class="profileicons">
+			<p id="profilename"  style="float: right;">Larry</p>
+			<img id="profilepic"style="float: right;" src="../images/profilepicimg.png" width="25px" height="25px">
+		</div>
+
+		<div class="righticonbuttons">
+			
+			
+			<div class="tooltip">
+				<img src="../images/add.png" width="40px" height="40px">
+				<span class="tooltiptext">Create</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/messageicon.png" width="40px" height="40px">
+				<span class="tooltiptext">Messaging</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/notif.png" width="40px" height="40px">
+				<span class="tooltiptext">Notifications</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/trinagle.png" width="40px" height="40px" onclick="showpop()">
+				<span class="tooltiptext">Account</span>
+			</div>			
+		</div>
+
+	</div>
+
+	<div class="whole">
+
+
+
+	<div class="popout" id= "popout">
+		<div class="popouticons">
+			<img id="profilepic"style="float: left;" src="../images/profilepicimg.png" width="55px" height="55px">
+			<div class= "description">
+				<p><b>Larry Zhi</b></p>
+				<a href="https://www.facebook.com/larry.zhi.58/" target="blank">See Your Profile</a>
+				<p id = "logout"><a href="logout.php">Logout</a></p>
+			</div>
+			
+		</div>	
+	</div>
+
+
+	
+	<!-- <script src="../script/zhi_redesign_script.js" defer=""></script> -->
+
+
+
+	<!-- main content -->
+<div class="tablecontainer" id="tablecontainer">
+
+	<div class="menu">
+		<h1 id="catname">All Games</h1>
+		<div class="dropdown">
+		<label for="cars">Choose a category:</label>
+		<select name="cars" id="cars" onchange="changecat()">
+		  <option value="All Games" onclick="changecat('All Games')">All</option>
+		  <option value="Action Games">Action</option>
+		  <option value="Board Games">Board</option>
+		  <option value="Card Games">Card</option>
+		  <option value="Puzzle Games">Puzzle</option>
+		  <option value="Strategy Games">Strategy</option>
+		</select>
+		</div>
+	</div>
+
+	<div id="tables">
+	<div class="row">
+	  <div class="column" onclick="gotogames('quiz')">
+	    <img src="../images/fatlarry.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil</h2>
+		    <p>Frank Wang</p>
+		    <p>250,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 2</h2>
+		    <p>Frank Wang</p>
+		    <p>460,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 3</h2>
+		    <p>Frank Wang</p>
+		    <p>220,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 4</h2>
+		    <p>Frank Wang</p>
+		    <p>423,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 5</h2>
+		    <p>Frank Wang</p>
+		    <p>360,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 6</h2>
+		    <p>Frank Wang</p>
+		    <p>760,800 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 7</h2>
+		    <p>Frank Wang</p>
+		    <p>560,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 8</h2>
+		    <p>Frank Wang</p>
+		    <p>960,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 9</h2>
+		    <p>Frank Wang</p>
+		    <p>860,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;"alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 10</h2>
+		    <p>Frank Wang</p>
+		    <p>760,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 11</h2>
+		    <p>Frank Wang</p>
+		    <p>10,460,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 12</h2>
+		    <p>Frank Wang</p>
+		    <p>4,160,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 13</h2>
+		    <p>Frank Wang</p>
+		    <p>1,460,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 14</h2>
+		    <p>Frank Wang</p>
+		    <p>469,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	  <div class="column">
+	    <img src="../images/fatlarry2.png" width="100%" height="200px;" alt="Adventures of Foodie Phil icon">
+	    <div class="textcontain">
+		    <h2>Adventures of Foodie Phil 15</h2>
+		    <p>Frank Wang</p>
+		    <p>260,000 players</p>
+		</div>
+	    <!-- <button>Play</button> -->
+	  </div>
+	</div>
+</div>
+
+<script src="../script/zhi_campus.js" defer=""></script>
+	
+</body>
+
+</html>

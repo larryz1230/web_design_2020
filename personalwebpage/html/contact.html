@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Webpage</title>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/contacts.css">
+	<!-- <link rel="stylesheet" href="../style/colors.css"> -->
+
+	<link rel = "stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+
+	<div class="banner">
+	<!-- Navigation Bar -->
+	<div class = "menu">
+			<ul>
+			<!-- 	<li class = "logo"><img src = "icon.webp"></li> -->
+				
+				<li> <a href="about.html">	About Me </a> </li>
+				<li ><a href="interests.html"> My Interests </a> </li>
+				<li id = "active"> Contact </a> </li>
+				<li> <a href="quiz.php"> Quiz </a> </li>
+				<li id="back"><a href="home.html">Back To Home</a></li>
+<!-- 				<div id = "droppy"class="dropdown-content">
+				    <a onclick="#">Soccer</a>
+				    <a onclick="#">Video Games</a>
+				    <a onclick="#">Coding</a>
+				  </div>
+				</div> -->
+			</ul>
+		</div>	
+		<br>
+	</div>
+
+	<div class="contacttitle">
+		<h1>Contact Me</h1>
+	</div>
+
+
+<div class="container">
+  <!-- <form action="../action_page.php"> -->
+
+    <label for="fname">Email</label>
+    <input type="text" id="fname" name="email" placeholder="Your email..">
+
+<!--     <label for="country">Country</label>
+    <select id="country" name="country">
+    	<option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      
+    </select> -->
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject..">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" onclick="submitted()" value="Submit">
+
+  </form>
+</div>
+
+
+
+<div class = "social-icons">
+			<ul>	
+				<li><a href="https://www.facebook.com" target="blank"><i class = "fa fa-facebook"></i></a></li>
+				<li><a href="https://www.twitter.com" target="blank"><i class = "fa fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com" target="blank"><i class = "fa fa-linkedin"></i></a></li>
+				<li><a href="https://www.instagram.com" target="blank"><i class = "fa fa-instagram"></i></a></li>
+			</ul>
+		</div>
+
+
+	<script type="text/javascript" src="../script/contact.js"></script>
+
+</body>
+</html>	
+

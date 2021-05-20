@@ -1,0 +1,69 @@
+@keyframes example {
+  0%{color: red;}
+  33%{color: blue;}
+  66%{color: black;}
+}
+
+.demo {
+  border-top: 100px solid #ccc;
+  height: 300px;
+  display: block;
+}
+
+@keyframes grow {
+  0% { font-size: 0; }
+  100% { font-size: 40px; }
+}
+
+
+.growsandstays {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+/* The element to apply the animation to */
+h1 {
+  width: 500px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: none;
+}
+
+
+
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 85%;}
+}
+
+.divv {
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 1s;
+}
+
+.grass{
+	background-color: green;
+	margin: 0px;
+}
+
+.divv:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<title>Pages | Facebook</title>
+	<link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png">
+	<link rel="stylesheet" href="../css/zhi_redesign_style.css"	>
+	<link rel="stylesheet" href="../css/zhi_grid.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+	</style>
+</head>
+<body>
+
+
+<div class = "navbar" id = "nav">
+		
+		<img id = "fbicon" src = "https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png" width="40px" height="40px" onclick="gotohome()">
+		<div class="searchbox">
+			<input type="text" name="searchfb" id= "searchfb" placeholder="Search Facebook">
+		</div>
+			<img id="fbtext" src = "../images/fbtitle.png">
+
+		<div class="profileicons">
+			<p id="profilename"  style="float: right;">Larry</p>
+			<img id="profilepic"style="float: right;" src="../images/profilepicimg.png" width="25px" height="25px">
+		</div>
+
+		<div class="righticonbuttons">
+			
+			
+			<div class="tooltip">
+				<img src="../images/add.png" width="40px" height="40px">
+				<span class="tooltiptext">Create</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/messageicon.png" width="40px" height="40px">
+				<span class="tooltiptext">Messaging</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/notif.png" width="40px" height="40px">
+				<span class="tooltiptext">Notifications</span>
+			</div>	
+			<div class="tooltip">
+				<img src="../images/trinagle.png" width="40px" height="40px" onclick="showpop()">
+				<span class="tooltiptext">Account</span>
+			</div>			
+		</div>
+
+	</div>
+
+	<div class="whole">
+
+
+
+	<div class="popout" id= "popout">
+		<div class="popouticons">
+			<img id="profilepic"style="float: left;" src="../images/profilepicimg.png" width="55px" height="55px">
+			<div class= "description">
+				<p><b>Larry Zhi</b></p>
+				<a href="https://www.facebook.com/larry.zhi.58/" target="blank">See Your Profile</a>
+				<p id = "logout"><a href="logout.php">Logout</a></p>
+			</div>
+			
+		</div>	
+	</div>
+
+
+	
+	<!-- <script src="../script/zhi_redesign_script.js" defer=""></script> -->
+
+
+
+	<!-- main content -->
+<div class="tablecontainer">
+
+	<h1>All Pages</h1>
+
+	<div class="roww">
+		<img src="../images/china.png" style="height:130px; width:130px; margin-top: 10px;" alt="China Icon">
+		<div class="vert">
+	  		<h1>Subtle Chinese Traits</h1>
+	  		<p>description</p>
+	  	</div>
+	  	<div class = "buttondiv">
+		  	<button style="width: 100%; height: 50%;">Notifications</button>
+		  	<button style="width: 100%; height: 50%;">Messages</button>
+	  	</div>
+	</div>
+
+	<div class="roww">
+	  	<img src="../images/us.png" style="height:130px; width:130px; margin-top: 10px;" alt="U.S. Icon">
+		<div class="vert">
+	  		<h1>Subtle American Traits</h1>
+	  		<p>description</p>
+	  	</div>
+	  	<div class = "buttondiv">
+		  	<button style="width: 100%; height: 50%;">Notifications</button>
+		  	<button style="width: 100%; height: 50%;">Messages</button>
+	  	</div>
+	</div>
+
+	<div class="roww">
+	  	<img src="../images/note.png" style="height:130px; width:130px; margin-top: 10px;" alt="Note Icon">
+		<div class="vert">
+	  		<h1>English Help</h1>
+	  		<p>description</p>
+	  	</div>
+	  	<div class = "buttondiv">
+		  	<button style="width: 100%; height: 50%;">Notifications</button>
+		  	<button style="width: 100%; height: 50%;">Messages</button>
+	  	</div>
+	</div>
+
+	<div class="roww">
+	  	<img src="../images/smily.png" style="height:130px; width:130px; margin-top: 10px;" alt="Smily Face Icon">
+		<div class="vert">
+	  		<h1>Kindness Club</h1>
+	  		<p>description</p>
+	  	</div>
+	  	<div class = "buttondiv">
+		  	<button style="width: 100%; height: 50%;">Notifications</button>
+		  	<button style="width: 100%; height: 50%;">Messages</button>
+	  	</div>
+	</div>
+</div>
+
+
+<div class="iconlist">
+	<div class="circle">
+		<p>Discover</p>
+	</div>
+
+	<div class="circle">
+		<p>Liked</p>
+	</div>
+
+	<div class="circle">
+		<p>Invites</p>
+	</div>
+</div>
+
+<script src="../script/zhi_campus.js" defer=""></script>
+	
+</body>
+
+</html>

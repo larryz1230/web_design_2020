@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<section id="banner" style="background-color: black;">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>This is your Attendee Dashboard</h2>
+							<p>Two weeks of innovation, research, and community-building for students around the world</p>
+              				<P>THIS PAGE IS CURRENTLY UNDER CONSTURCTION</P>
+		</div>
+	</section>
+	
+
+
+	<div id="liveclock" class="outside_rim">
+
+		<!-- <img src="images/brownbird.png" alt="brown bird" id="brownbird" height="300px"> -->
+		<img id = "brownbird" src="https://clipart.world/wp-content/uploads/2020/11/Earth-clipart-transparent.png" width="300px" height="300px">
+		
+
+		<div class="in">
+			<div class="hand hour">
+				<img src="images/hourhand.png" alt="hour hand" id="hourhand" height="200px">
+			</div>
+			<div class="hand minute">
+				<img src="images/minutehand.png" alt="minute hand" id="hourhand" height="200px">
+			</div>
+		</div>
+	</div>
+
+	<button onclick="movetimeforward()">forward</button>
+	<button onclick="movetimeback">backwards</button>
+
+	<script>
+		document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+       // console.log("ok");
+       movetimeforward(-15);
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+       movetimeforward(15);
+    }
+
+}
+</script>
+
+	<script type="text/javascript" src="test.js"></script>
+</body>
+</html>

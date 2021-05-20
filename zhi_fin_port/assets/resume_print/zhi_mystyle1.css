@@ -1,0 +1,55 @@
+body {
+  background-color: #dddded;
+  margin: 10px;
+}
+
+#title {
+	text-align: center;
+}
+
+#title:hover {
+  /*background-color: yellow;*/
+  color: grey;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+html{
+	font-family: monospace;
+	font-size: 14px;
+}
+
+h3{
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background: pink	;
+	border-radius: 100%;
+	width: 100px;
+}
+
+.bottom{
+	display: inline-flex;
+}
+
+#backTop{
+	position: absolute;
+  	right: 50px;
+}
+
+@media print {
+    header, footer, aside, form, … {
+        display: none;
+    }
+
+    body{
+    	background-color: none;
+    }
+}

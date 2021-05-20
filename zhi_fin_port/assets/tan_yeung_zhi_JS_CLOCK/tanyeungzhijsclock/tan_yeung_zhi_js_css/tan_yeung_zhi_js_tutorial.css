@@ -1,0 +1,404 @@
+html{
+	margin: none;
+	/*background-color: #a1cae2;*/
+	background-color: #a1cae2;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#sign {
+	position: absolute;
+	top: 500px;
+	left: 700px;
+
+}
+
+#highlights {
+	position: absolute;
+	left: 790px;
+	top: 380px;
+	z-index: 1000;
+}
+
+#tree {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	z-index: -1;
+}
+
+#buglabel{
+	position: absolute;
+	top: 710px;
+    left: 6px;
+	font-size: 38px;
+	text-align: center;
+	width: 100px;
+	color: white;
+	/*border: 1px solid black;*/
+}
+
+.clock {
+    transform: translateX(-60%) translateY(-50%);
+    color: black;
+    font-size: 30px;
+    font-family: Georgia;
+    letter-spacing: 7px;
+  	background-color: #966c3b;
+  	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+	width: 300px;
+	position: absolute;
+	top: 210px;
+	left: 30px;
+	animation-name: bird;
+	animation-duration: 16s;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#egg {
+	height: 120px;
+	width: 100px;
+	background-color: #f8f4e1;
+	border-radius: 50%;
+	position: absolute;
+	left: 800px;
+	top: 470px;
+	transform: rotate(20deg);
+}
+
+#egg2 {
+	height: 120px;
+	width: 100px;
+	background-color: #f8f4e1;
+	border-radius: 50%;
+	position: absolute;
+	left: 910px;
+	top: 470px;
+	transform: rotate(-60deg);
+
+}
+
+#egg1 {
+	height: 120px;
+	width: 100px;
+	background-color: #f8f4e1;
+	border-radius: 50%;
+	position: absolute;
+	left: 980px;
+	top: 470px;
+	transform: rotate(70deg);
+}
+
+#nest {
+	position: absolute;
+	top: 360px;
+	left: 700px;
+}
+
+#brownbird {
+	position: absolute;
+	top: -50px;
+	left: -80px;
+	/*border: 1px solid black*/
+}
+
+.outside_rim {
+position: relative;
+width: 180px;
+height: 180px;
+border-radius: 250px;
+/*background: #eaddbb;
+box-shadow: inset 0 0 10px #4a3933;*/
+border: 14px solid rgba(255,255,255,0);
+position: absolute;
+top: 425px;
+left: 252px;
+z-index: 999;
+}
+
+/*.outside_rim::before, .outside_rim::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 100%;
+background: #402a0b;
+z-index: 0;
+left: 50%;
+margin-left: -5px;
+top: 0
+}
+
+.outside_rim::after {
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg)
+}
+
+
+/*.outside_rim::before, .outside_rim::after, .outside_rim .marker{ 
+content: "";
+position: absolute;
+width: 10px;
+height: 100%;
+background: #402a0b;
+z-index: 0;
+left: 50%;
+margin-left: -5px;
+top: 0
+}*/
+
+/*.outside_rim .marker {
+background: gray;
+width: 8px;
+margin-left: -4px
+}
+
+.outside_rim .marker.one-seven {
+-moz-transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+transform: rotate(30deg)
+}
+
+.outside_rim .marker.two-eight {
+-moz-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+transform: rotate(60deg)
+}
+
+.outside_rim .marker.four-ten {
+-moz-transform: rotate(120deg);
+-ms-transform: rotate(120deg);
+-webkit-transform: rotate(120deg);
+transform: rotate(120deg)
+}
+
+.outside_rim .marker.five-eleven {
+-moz-transform: rotate(150deg);
+-ms-transform: rotate(150deg);
+-webkit-transform: rotate(150deg);
+transform: rotate(150deg)
+}*/
+
+
+.in {
+position: absolute;
+width: 100px;
+height: 100px;
+background: transparent;
+-moz-border-radius: 1000px;
+-webkit-border-radius: 1000px;
+border-radius: 1000px;
+z-index: 1000;
+left: 40px; /* center DIV horizontally (100%-88% / 2) */
+top: 40px; /* center DIV vertically (100%-88% / 2) */
+}
+
+.in::before {
+/* clock center dot small */
+content: "";
+width: 18px;
+height: 18px;
+border-radius: 18px;
+margin-left: -9px;
+margin-top: -9px;
+background: black;
+position: absolute;
+top: 50%;
+left: 50%;
+box-shadow: 0 0 30px gray
+}
+
+.in::after {
+/*content: "BIRD CLOCK";*/
+position: absolute;
+width: 100%;
+font: normal 0.8em Arial;
+color: white;
+text-align: center;
+top: 85%
+}
+
+#hourhand {
+	position: absolute;
+	left: -100px;
+	top: -170px;
+}
+
+.hand, .hand.hour {
+position: absolute;
+width: 4px; /* default width of hands/ hour hand */
+height: 30%; /* default height of hands/ hour hand */
+top: 20%; /* offset hand vertically by 20% so its bottom is at center of clock */
+left: 50%; /* offset hand horiz by 50% so its left is at center of clock */
+margin-left: -2px; /* Account for hand width to center hand horizonally */
+background: black;
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+-moz-transform-origin: bottom; /* Set transform origin to center bottom */
+-ms-transform-origin: bottom;
+-webkit-transform-origin: bottom;
+transform-origin: bottom;
+z-index: -1;
+-moz-box-shadow: 0 0 3px gray;
+-webkit-box-shadow: 0 0 3px gray;
+box-shadow: 0 0 3px gray
+}
+
+.hand.minute { /* minute hand (2nd longest) */
+height: 45%;
+top: 5%;
+width: 6px;
+margin-left: -3px;
+}
+
+.hand.second { /* second hand (longest) */
+height: 50%;
+width: 2px;
+margin-left: -1px;
+top: 0;
+background: #d34c2e;
+}
+
+#cloud1{
+	position: absolute;
+	top: 0px;
+	left: 820px;
+	/*border: 1px solid black;*/
+	width: 700px;
+	height: 600px;
+	animation-name: cloud;
+	animation-duration: 14s;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+@keyframes cloud {
+	from {left: 0px;}
+	to {left: 1530px;}
+	}
+}
+
+
+#cuckoo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	z-index: 97;
+}
+
+#cloud2{
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	/*border: 1px solid black;*/
+	width: 500px;
+	height: 450px;
+	animation-name: cloud;
+	animation-duration: 14s;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+#bluebird {
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	/*border: 1px solid black;*/
+	width: 100px;
+	height: 100px;
+	animation-name: bird;
+	animation-duration: 16s;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#pinkbird {
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	/*border: 1px solid black;*/
+	width: 100px;
+	height: 100px;
+	animation-name: bird;
+	animation-duration: 16s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+
+#cuckoo {
+	z-index: -1;
+}
+
+@keyframes bird {
+	from {left: 000px;}
+	to {left: 1700px;}
+	}
+}
+
+@keyframes flying {
+	from {left: 000px;}
+	to {left: 300px;}
+	}
+}
+
+@keyframes bug {
+	from {bottom: 000px;}
+	to {top: 300px;}
+	}
+}
+
+@keyframes random {
+  0%   {background-color: none; left:0px; top:600px; transform: rotate(-360deg);}
+  20%  {background-color: none; left:1300px; top:500px; transform: rotate(0deg);}
+  40%  {background-color: none; left: 500px; top:240px; transform: rotate(360deg);}
+  60% {background-color: none; left: 230px; top:80px; transform: rotate(0deg);}
+  80% {background-color: none; left: 450px; top:340px; transform: rotate(720deg);}
+  100% {background-color: none; left: 0px; top:600px; transform: rotate(360deg);}
+}
+
+
+
+.image {
+    position:relative;
+    border: 1px solid black;
+
+}
+
+.text {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%
+}
+
+#bug{
+	width: 100px;
+	height: 100px;
+	animation-name: random;
+	animation-duration: 2;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 7;
+}
